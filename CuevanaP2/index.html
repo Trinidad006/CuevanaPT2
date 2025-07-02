@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatoFlix - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>GatoFlix</h1>
+        <div class="auth-tabs">
+            <button id="show-login" class="active">Iniciar Sesión</button>
+            <button id="show-register">Registrarse</button>
+        </div>
+        <form id="login-form">
+            <input type="text" id="login-input" placeholder="Usuario o correo" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+            <div id="error-message" class="error"></div>
+        </form>
+        <form id="register-form" style="display:none">
+            <input type="text" id="new-username" placeholder="Nuevo usuario" required>
+            <input type="email" id="new-email" placeholder="Correo electrónico" required>
+            <input type="password" id="new-password" placeholder="Nueva contraseña" required>
+            <button type="submit">Registrarse</button>
+            <div id="register-error" class="error"></div>
+        </form>
+    </main>
+    <script src="auth.js"></script>
+</body>
+</html>
